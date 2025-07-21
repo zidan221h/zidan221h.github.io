@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Borneo Indoor HKSN</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVIGASI -->
+    <nav>
+      <ul>
+        <li><a href="#fasilitas">Fasilitas</a></li>
+        <li><a href="#lapangan">Lapangan</a></li>
+        <li><a href="#pendaftaran">Booking</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+
+    <!-- HEADER -->
+    <header class="main-header">
+      <div class="header-overlay">
+        <div class="judul-header">
+          <h1>Borneo Indoor HKSN</h1>
+        </div>
+      </div>
+    </header>
+
+    <!-- ISI UTAMA -->
+    <main>
+      <!-- BERANDA -->
+      <section class="welcome-section">
+        <div class="welcome-container">
+          <h1 class="welcome-title">Selamat Datang!</h1>
+          <p class="welcome-description">
+            "Gedung serbaguna di kawasan <strong>HKSN Banjarmasin</strong>,
+            tempat ideal untuk berbagai
+            <span class="highlight">kegiatan olahraga</span>. Didesain
+            <em>modern</em> dengan fasilitas lengkap seperti
+            <strong>lapangan futsal, badminton, basket</strong>, hingga
+            <strong>ruang ibadah</strong> dan <strong>area kafe</strong>. Cocok
+            untuk <span class="highlight">turnamen</span>,
+            <em>latihan rutin</em>, maupun <strong>acara komunitas</strong>.
+            Temukan <span class="highlight-bold">kenyamanan</span> dan
+            <span class="highlight-bold">kemudahan booking</span> hanya di
+            <strong class="highlight">Borneo Indoor HKSN</strong>!"
+          </p>
+        </div>
+      </section>
+
+      <!-- FASILITAS -->
+      <section id="fasilitas" class="section fasilitas-container">
+        <h2>Fasilitas Borneo Indoor</h2>
+        <div class="fasilitas-grid">
+          <div class="fasilitas-item">
+            <img
+              src="assets-/img2/toilet.jpeg"
+              alt="Fasilitas Toilet"
+              class="fullscreen-img"
+            />
+            <p>Toilet Room</p>
+          </div>
+          <div class="fasilitas-item">
+            <img
+              src="assets-/img2/ibdah.jpeg"
+              alt="Ruang Ibadah"
+              class="fullscreen-img"
+            />
+            <p>Room Prayer</p>
+          </div>
+          <div class="fasilitas-item">
+            <img
+              src="assets-/img2/cffe.jpeg"
+              alt="Area Kafe"
+              class="fullscreen-img"
+            />
+            <p>Cafe</p>
+          </div>
+          <div class="fasilitas-item">
+            <img
+              src="assets-/img2/boking.jpeg"
+              alt="Area Booking & Kasir"
+              class="fullscreen-img"
+            />
+            <p>Cashier</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- LAPANGAN -->
+      <section class="section lapangan-container">
+        <h2 id="lapangan">Lapangan</h2>
+        <div class="gallery">
+          <figure>
+            <img
+              src="assets-/img2/futsal.jpeg"
+              alt="Lapangan Futsal"
+              class="fullscreen-img"
+            />
+            <figcaption>Lapangan Futsal</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="assets-/img2/bdminton.jpeg"
+              alt="Lapangan Badminton"
+              class="fullscreen-img"
+            />
+            <figcaption>Lapangan Badminton</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="assets-/img2/basket.jpeg"
+              alt="Lapangan Basket"
+              class="fullscreen-img"
+            />
+            <figcaption>Lapangan Basket</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="assets-/img2/tennis.jpeg"
+              alt="Meja Pingpong"
+              class="fullscreen-img"
+            />
+            <figcaption>Meja Pingpong</figcaption>
+          </figure>
+        </div>
+
+        <h3>Testimoni</h3>
+        <audio controls>
+          <source
+            src="assets-/audio2/borneo_potong_33detik.mp3"
+            type="audio/mp3"
+          />
+          Browser tidak mendukung tag audio.
+        </audio>
+
+        <h3>Review</h3>
+        <video width="100%" controls>
+          <source src="assets-/video2/video.mp4" type="video/mp4" />
+          Browser tidak mendukung tag video.
+        </video>
+      </section>
+
+      <!-- PENDAFTARAN -->
+      <section id="pendaftaran" class="section">
+        <h2>Pendaftaran</h2>
+        <form id="bookingForm">
+          <label for="nama">Nama:</label><br />
+          <input type="text" id="nama" name="nama" required /><br /><br />
+
+          <label for="no">No. Handphone:</label><br />
+          <input type="tel" id="no" name="no" required /><br /><br />
+
+          <button type="submit">Daftar</button>
+        </form>
+
+        <!-- Pesan sukses -->
+        <p
+          id="successMessage"
+          style="
+            display: none;
+            margin-top: 20px;
+            color: green;
+            font-weight: bold;
+          "
+        >
+          ✅ Anda telah berhasil booking lapangan!
+        </p>
+      </section>
+
+      <!-- KONTAK -->
+      <section id="kontak" class="section">
+        <h2>Kontak Kami</h2>
+        <p>📍 Alamat: HKSN, Banjarmasin</p>
+        <p>📞 Telepon: 0812-3456-7890</p>
+        <p>📧 Email: info@borneoindoorhksn.com</p>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; 2025 Borneo Indoor HKSN</p>
+      <p>&copy; dibuat oleh zidan</p>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="script.js"></script>
+    <button id="scrollToTopBtn" title="Kembali ke atas">↑</button>
+  </body>
+</html>

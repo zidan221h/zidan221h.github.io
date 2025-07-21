@@ -1,0 +1,349 @@
+/* ======================== */
+/* RESET DASAR */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ======================== */
+/* HEADER */
+.main-header {
+  position: relative;
+  height: 700px;
+  background: url("assets-/img2/Screenshot%202025-07-20%20233524.png")
+    center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.judul-header h1 {
+  color: white;
+  font-size: 70px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ======================== */
+/* NAVIGASI */
+nav {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 16px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* ======================== */
+/* SECTION UMUM */
+.section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.section p {
+  font-size: 18px;
+  color: #444;
+}
+
+/* ======================== */
+/* WELCOME SECTION */
+.welcome-section {
+  padding: 100px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #ffffff, #d2e8ff);
+  transition: background 1s ease-in-out;
+}
+
+.welcome-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #004080;
+  animation: fadeInDown 1s ease-out;
+}
+
+.welcome-description {
+  font-size: 1.2rem;
+  max-width: 850px;
+  margin: 0 auto;
+  line-height: 1.7;
+  color: #333;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+/* Efek animasi muncul */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ======================== */
+/* GALERI */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 32px;
+  justify-items: center;
+  padding: 30px 10px;
+  background-color: #4a6ba3;
+  margin-bottom: 30px;
+}
+
+.gallery figure {
+  text-align: center;
+  margin: 0;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.gallery img:hover,
+.fullscreen-img:hover {
+  transform: scale(1.08);
+  opacity: 0.9;
+}
+
+.gallery figcaption {
+  margin-top: 12px;
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  background-color: #d35400;
+  padding: 12px 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+  display: inline-block;
+}
+
+/* ======================== */
+/* FASILITAS */
+.fasilitas-container {
+  padding: 10px;
+  background-color: #eef0f3;
+  text-align: center;
+  border-top: 2px solid #f8fbfe;
+  border-bottom: 2px solid #fcfdff;
+}
+
+.fasilitas-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #0f0d0d;
+}
+
+.fasilitas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.fasilitas-item {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.fasilitas-item:hover {
+  transform: scale(1.02);
+}
+
+.fasilitas-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.fasilitas-item p {
+  margin: 10px 0;
+  font-weight: bold;
+  color: #444;
+}
+
+/* ======================== */
+/* LAPANGAN */
+.lapangan-container {
+  padding: 50px;
+  margin-top: 80px;
+  background-color: #4a6ba3;
+  text-align: center;
+  border-top: 2px solid #1178cd;
+  border-bottom: 2px solid #2290eb;
+}
+
+.lapangan-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #f7f4f4;
+}
+
+/* ======================== */
+/* AUDIO & VIDEO */
+audio,
+video {
+  margin-top: 20px;
+  width: 90%;
+  max-width: 700px;
+  font-size: 18px;
+  color: white;
+}
+
+.section h3 {
+  color: white;
+  font-size: 24px;
+  margin: 30px 0 15px;
+}
+
+/* ======================== */
+/* FORM PENDAFTARAN */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  background-color: #e5edec;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: #3e86cf;
+  color: rgb(8, 6, 6);
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background-color: #2980b9;
+}
+
+/* ======================== */
+/* KONTAK */
+#kontak p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* ======================== */
+/* FOOTER */
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* ======================== */
+/* SCROLL TO TOP BUTTON */
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 100;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #2980b9;
+}
+.kontak-section {
+  background: linear-gradient(135deg, #f0f8ff, #e0f7fa);
+  padding: 40px 20px;
+  text-align: center;
+}
+.kontak-section p {
+  font-size: 18px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
